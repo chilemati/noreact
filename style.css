@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0.5rem;
+    width: 98%;
+    margin: auto;
+    box-shadow: 2px 2px 1px white;
+    background-color: wheat;
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    background-color: teal;
+    padding: 1rem;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo{
+    background-color: blue;
+    color: darkcyan;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 2px blue;
+    border-radius: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+    align-content: center;
+    margin-right: 1rem;
+}
+
+#logo a:hover{
+    background-color: none;
+}
+
+
+.one a:hover{
+    background-color: tomato;
+    color: blue;
+    padding: 0.5rem;
+}
+
+.one{
+    flex-grow: 1;
+    align-self: center;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+
+.more{
+    flex-shrink: 2;
+    align-self: center;
+}
+
+.float{
+    overflow: hidden;
+    margin: 1rem 0rem;
+}
+
+.float img{
+    float: right;
+    margin: 0.3rem;
+}
+
+hr{
+    height: 12px;
+    background-color: green;
+    margin: 1rem 0rem;
+    border-radius: 5px;
+}
+
+.section1 h1{
+    text-transform: uppercase;
+    color: mediumblue;
+    margin-top: 1rem;
+}
+
+.section2-h1{
+    text-transform: uppercase;
+    color: indigo;
+    margin-bottom: 1rem;
+}
+
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: start;
+}
+
+.box{
+    background-color: royalblue;
+    text-transform: uppercase;
+    color: gold;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    box-shadow: 7px 5px 3px white;
+}
+
+.box:hover{
+    border-left: 20px solid green;
+    background-color: blue;
+    color: white;
+    transition: border-left 0.3s ease-in;
+}
+
+
+/* media query section */
+
+@media(max-width: 600px){
+    html,body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .one{
+        visibility: hidden;
+    }
+
+    
+#logo:hover{
+    flex-grow: 1;
+    background-color: green;
+    transition: flex-grow 5s ease-in;
+}
+.section2{
+    flex-direction: column;
+}
+
+.box{
+    width: 90%;
+    text-align: center;
+    font-size: 4vw;
+}
+
+}
