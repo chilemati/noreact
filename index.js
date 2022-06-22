@@ -40,3 +40,16 @@ fruits.map((x)=> {
 //    using if else or else in map can print out on wanted results
  
 })
+
+// steps to commit and push files to a repo
+        /*
+            >git status : gives the status of tracked and untracked files or commited files
+            >git add filename : adds a single file in a folder
+            >git add . : adds all files in the folder to local repo for committing
+            >git log : shows the files to be committed
+            >git commit -m "a disc message" : commits the files to local repo
+            >git remote add origin https://github.com/chilemati/noreact.git : sets the repo in your github to push the files
+            >git push origin master: pushes the files to the ropo 
+        */
+
+// destructuring a array means taking out of the array all the items we need to use.
